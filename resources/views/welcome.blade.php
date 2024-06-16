@@ -8,6 +8,7 @@
                 <x-slot name="url">https://marvelsnapzone.com/wp-content/themes/blocksy-child/assets/media/cards/abomination.webp?v=116</x-slot>
                 <x-slot name="cardName">abomination</x-slot>
                 <x-slot name="cardDescription">Sin habilidad alguna</x-slot>
+                <x-slot name="tag"></x-slot>
             </x-card>
         </div>
         <div>
@@ -16,6 +17,7 @@
                 <x-slot name="url">https://marvelsnapzone.com/wp-content/themes/blocksy-child/assets/media/cards/abomination.webp?v=116</x-slot>
                 <x-slot name="cardName">abomination</x-slot>
                 <x-slot name="cardDescription">Sin habilidad alguna</x-slot>
+                <x-slot name="tag"></x-slot>
             </x-card>
         </div>
         <div>
@@ -24,6 +26,7 @@
                 <x-slot name="url">https://marvelsnapzone.com/wp-content/themes/blocksy-child/assets/media/cards/abomination.webp?v=116</x-slot>
                 <x-slot name="cardName">abomination</x-slot>
                 <x-slot name="cardDescription">Sin habilidad alguna</x-slot>
+                <x-slot name="tag"></x-slot>
             </x-card>
         </div>
         <div>
@@ -32,22 +35,7 @@
                 <x-slot name="url">https://marvelsnapzone.com/wp-content/themes/blocksy-child/assets/media/cards/abomination.webp?v=116</x-slot>
                 <x-slot name="cardName">abomination</x-slot>
                 <x-slot name="cardDescription">Sin habilidad alguna</x-slot>
-            </x-card>
-        </div>
-        <div>
-            <x-card>
-                <x-slot name="serie">'Serie 1'</x-slot>
-                <x-slot name="url">https://marvelsnapzone.com/wp-content/themes/blocksy-child/assets/media/cards/abomination.webp?v=116</x-slot>
-                <x-slot name="cardName">abomination</x-slot>
-                <x-slot name="cardDescription">Sin habilidad alguna</x-slot>
-            </x-card>
-        </div>
-        <div>
-            <x-card>
-                <x-slot name="serie">'Serie 1'</x-slot>
-                <x-slot name="url">https://marvelsnapzone.com/wp-content/themes/blocksy-child/assets/media/cards/abomination.webp?v=116</x-slot>
-                <x-slot name="cardName">abomination</x-slot>
-                <x-slot name="cardDescription">Sin habilidad alguna</x-slot>
+                <x-slot name="tag"></x-slot>
             </x-card>
         </div>
         <div>
@@ -56,6 +44,7 @@
                 <x-slot name="url">https://marvelsnapzone.com/wp-content/themes/blocksy-child/assets/media/cards/abomination.webp?v=116</x-slot>
                 <x-slot name="cardName">abomination</x-slot>
                 <x-slot name="cardDescription">Sin habilidad alguna</x-slot>
+                <x-slot name="tag"></x-slot>
             </x-card>
         </div>
         <div>
@@ -64,6 +53,7 @@
                 <x-slot name="url">https://marvelsnapzone.com/wp-content/themes/blocksy-child/assets/media/cards/abomination.webp?v=116</x-slot>
                 <x-slot name="cardName">abomination</x-slot>
                 <x-slot name="cardDescription">Sin habilidad alguna</x-slot>
+                <x-slot name="tag"></x-slot>
             </x-card>
         </div>
         <div>
@@ -72,6 +62,7 @@
                 <x-slot name="url">https://marvelsnapzone.com/wp-content/themes/blocksy-child/assets/media/cards/abomination.webp?v=116</x-slot>
                 <x-slot name="cardName">abomination</x-slot>
                 <x-slot name="cardDescription">Sin habilidad alguna</x-slot>
+                <x-slot name="tag"></x-slot>
             </x-card>
         </div>
         <div>
@@ -80,6 +71,7 @@
                 <x-slot name="url">https://marvelsnapzone.com/wp-content/themes/blocksy-child/assets/media/cards/abomination.webp?v=116</x-slot>
                 <x-slot name="cardName">abomination</x-slot>
                 <x-slot name="cardDescription">Sin habilidad alguna</x-slot>
+                <x-slot name="tag"></x-slot>
             </x-card>
         </div>
     </div>

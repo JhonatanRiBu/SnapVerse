@@ -8,11 +8,13 @@
         <img src={{$url}} width="200" height="250">
       </div>
       <div class="pb-1">
-        <h3 class="text-xm">{{$cardName}}</h3>
+        <h3 class="text-xm text-gray-600"><b>{{$cardName}}</b></h3>
       </div>
       <div>
-        <p class="text-xs px-5 max-w-52">{{$cardDescription}}</p>
-        <br>
+        <p class="text-xs px-5 max-w-52"><span><b>{{$tag}}</b></span> {{$cardDescription}}</p>
       </div>
     </div>
+
 </div>
+
+

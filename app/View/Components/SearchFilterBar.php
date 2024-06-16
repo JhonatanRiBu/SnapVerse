@@ -4,10 +4,9 @@ namespace App\View\Components;
 
 use Closure;
 use Illuminate\Contracts\View\View;
-use Illuminate\Support\Facades\Http;
 use Illuminate\View\Component;
 
-class card extends Component
+class SearchFilterBar extends Component
 {
     /**
      * Create a new component instance.
@@ -22,6 +21,6 @@ class card extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.card');
+        return view('components.search-filter-bar');
     }
 }
