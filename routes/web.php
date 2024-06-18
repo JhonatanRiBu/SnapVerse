@@ -18,5 +18,5 @@ Route::get('/', function(){
     return view('welcome');
 });
 Route::get('/snap', [SnapController::class, 'index'])->name('snap.index');
-Route::get('/snap/{search}', [SnapController::class, 'index']);
+// Route::get('/snap/{search}', [SnapController::class, 'index']);
 

@@ -12,9 +12,9 @@
                             d="M3 5v10M3 5a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm0 10a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm12 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm0 0V6a3 3 0 0 0-3-3H9m1.5-2-2 2 2 2" />
                     </svg>
                 </div>
-                <input type="text" id="simple-search" name="search"
+                <input type="text" id="simple-search" name="name"
                     class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 black:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                    placeholder="Search..." required/>
+                    placeholder="Search to character..." required/>
             </div>
             <div>
                 <button type="submit" value="enviar"
@@ -28,77 +28,88 @@
                 </button>
             </div>
         </form>
-        <div class="flex w-full pb-2 justify-center">
-            <div class="w-1/5 flex flex-row items-center">
-                <div class="pt-1">
-                    <label for="underline_select" class="pr-2 text-white">Cost: </label>
+        <form method="GET" class="flex items-center mx-auto w-full gap-8" action="{{route('snap.index')}}">
+            <div class="flex pb-2 gap-5">
+                <div class="w-1/5 flex flex-row items-center">
+                    <div class="pt-1">
+                        <label for="underline_select" class="pr-2 text-white">Cost: </label>
+                    </div>
+                    <div>
+                        <select id="underline_select" name="cost"
+                            class="block py-2.5 px-0 w-full text-sm text-gray-500 bg-transparent border-0 border-b-2 border-gray-200 appearance-none dark:text-gray-400 dark:border-gray-700 focus:outline-none focus:ring-0 focus:border-gray-200 peer pb-1">
+                            <option selected>Any</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                        </select>
+                    </div>
                 </div>
-                <div>
-                    <select id="underline_select"
-                        class="block py-2.5 px-0 w-full text-sm text-gray-500 bg-transparent border-0 border-b-2 border-gray-200 appearance-none dark:text-gray-400 dark:border-gray-700 focus:outline-none focus:ring-0 focus:border-gray-200 peer pb-1">
-                        <option value="costdesc">0-9⬇️</option>
-                        <option value="costasc">0-9⬆️</option>
-                    </select>
+                <div class="w-1/4 flex flex-row items-center">
+                    <div class="pt-1">
+                        <label for="underline_select" class="pr-2 text-white">Power: </label>
+                    </div>
+                    <div>
+                        <select id="underline_select" name="power_order"
+                            class="block py-2.5 px-0 w-full text-sm text-gray-500 bg-transparent border-0 border-b-2 border-gray-200 appearance-none dark:text-gray-400 dark:border-gray-700 focus:outline-none focus:ring-0 focus:border-gray-200 peer pb-1">
+                            <option selected>Any</option>
+                            <option value="desc">0-9⬇️</option>
+                            <option value="asc" >0-9⬆️</option>
+                        </select>
+                    </div>
                 </div>
-            </div>
-            <div class="w-1/5 flex flex-row items-center">
-                <div class="pt-1">
-                    <label for="underline_select" class="pr-2 text-white">Power: </label>
+                <div class="w-1/4  flex flex-row items-center">
+                    <div class="pt-1">
+                        <label for="underline_select" class="pr-2 text-white">Series: </label>
+                    </div>
+                    <div>
+                        <select id="underline_select" name="serie"
+                            class="block py-2.5 px-0 w-full text-sm text-gray-500 bg-transparent border-0 border-b-2 border-gray-200 appearance-none dark:text-gray-400 dark:border-gray-700 focus:outline-none focus:ring-0 focus:border-gray-200 peer pb-1">
+                            <option selected>Any</option>
+                            <option value="1">Serie 1</option>
+                            <option value="2">Serie 2</option>
+                            <option value="3">Serie 3</option>
+                            <option value="4">Serie 4</option>
+                            <option value="5">Serie 5</option>
+                        </select>
+                    </div>
                 </div>
-                <div>
-                    <select id="underline_select"
-                        class="block py-2.5 px-0 w-full text-sm text-gray-500 bg-transparent border-0 border-b-2 border-gray-200 appearance-none dark:text-gray-400 dark:border-gray-700 focus:outline-none focus:ring-0 focus:border-gray-200 peer pb-1">
-                        <option value="powerdesc">0-9⬇️</option>
-                        <option value="powerasc" >0-9⬆️</option>
-                    </select>
-                </div>
-            </div>
-            <div class="w-1/5  flex flex-row items-center">
-                <div class="pt-1">
-                    <label for="underline_select" class="pr-2 text-white">Series: </label>
-                </div>
-                <div>
-                    <select id="underline_select"
-                        class="block py-2.5 px-0 w-full text-sm text-gray-500 bg-transparent border-0 border-b-2 border-gray-200 appearance-none dark:text-gray-400 dark:border-gray-700 focus:outline-none focus:ring-0 focus:border-gray-200 peer pb-1">
-                        <option value="serie1">Series 1</option>
-                        <option value="serie2">Series 2</option>
-                        <option value="serie3">Series 3</option>
-                        <option value="serie4">Series 4</option>
-                        <option value="serie5">Series 5</option>
-                    </select>
+
+                <div class="w-1/3 flex flex-row items-center">
+                    <div class="pt-1">
+                        <label for="underline_select" class="pr-2 text-white">Status: </label>
+                    </div>
+                    <div>
+                        <select id="underline_select"
+                            class="block py-2.5 px-0 w-full text-sm text-gray-500 bg-transparent border-0 border-b-2 border-gray-200 appearance-none dark:text-gray-400 dark:border-gray-700 focus:outline-none focus:ring-0 focus:border-gray-200 peer pb-1">
+                            <option selected>Any</option>
+                            <option value="released">Released</option>
+                            <option value="unreleased">Unreleased</option>
+                        </select>
+                    </div>
                 </div>
             </div>
 
-            <div class="w-1/4 flex flex-row items-center">
-                <div class="pt-1">
-                    <label for="underline_select" class="pr-2 text-white">Status: </label>
+            <div class="flex w-1/3 gap-1">
+                <div class="w-1/2">
+                    <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-1 border border-blue-700 rounded w-24">
+                        Apply
+                    </button>
                 </div>
-                <div>
-                    <select id="underline_select"
-                        class="block py-2.5 px-0 w-full text-sm text-gray-500 bg-transparent border-0 border-b-2 border-gray-200 appearance-none dark:text-gray-400 dark:border-gray-700 focus:outline-none focus:ring-0 focus:border-gray-200 peer pb-1">
-                        <option value="released">Released</option>
-                        <option value="unreleased">Unreleased</option>
-                    </select>
+                <div class="w-1/2">
+                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-1 border border-blue-700 rounded w-24">
+                        Add card
+                    </button>
+                </div>
+                <div class="w-1/2">
+                    <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-1 px-1 border border-red-700 rounded w-24">
+                        Delete all
+                    </button>
                 </div>
             </div>
-        </div>
-
-        <div class="flex w-1/3 gap-1">
-            <div class="w-1/2">
-                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-1 border border-blue-700 rounded w-24">
-                    Apply
-                </button>
-            </div>
-            <div class="w-1/2">
-                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-1 border border-blue-700 rounded w-24">
-                    Add card
-                </button>
-            </div>
-            <div class="w-1/2">
-                <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-1 px-1 border border-red-700 rounded w-24">
-                    Delete all
-                </button>
-            </div>
+        </form>
         </div>
     </div>
-</div>
+

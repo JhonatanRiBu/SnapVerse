@@ -3,13 +3,12 @@
     <x-slot name="title">SnapVerse</x-slot>
     <h1 class="pt-5 pl-3 text-3xl">ALL CARDS</h1>
     <x-search-filter-bar>
-        
+
     </x-search-filter-bar>
     <h3 class="pt-5 pl-3 text-2xl">Cards found: <b>{{$characters['total']}}</b></h3>
+
     <div class=" flex flex-wrap gap-y-2 gap-x-5 px-5 py-5 justify-center">
-
         @foreach ($characters['data'] as $character)
-
         <?php $extractedSpanText = getSpanTextFromAbility($character["ability"]);?>
         <?php $extractedRemainingText = getRemainingTextFromAbility($character["ability"]);?>
         <div>
@@ -31,6 +30,7 @@
 
         </x-card>
         </div>
+
         @endforeach
     </div>
 
